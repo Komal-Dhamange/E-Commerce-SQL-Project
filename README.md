@@ -35,3 +35,34 @@ SELECT * FROM Users;
 | 2 | Priya Singh | priya@gmail.com | 9999999992 |
 | 3 | Aman Kumar | aman@gmail.com | 9999999993 |
 
+
+## Question 2
+**Create a Categories table and insert category details into the table.**
+
+### SQL Query
+
+```sql
+CREATE TABLE Categories (
+    category_id INT PRIMARY KEY,
+    category_name VARCHAR(100)
+);
+
+INSERT INTO Categories VALUES
+(1, 'Mobiles'),
+(2, 'Laptops'),
+(3, 'Fashion');
+```
+
+### Verification Query
+
+```sql
+SELECT * FROM Categories;
+```
+
+### Output
+
+| category_id | category_name |
+|-------------|--------------|
+| 1 | Mobiles |
+| 2 | Laptops |
+| 3 | Fashion |
