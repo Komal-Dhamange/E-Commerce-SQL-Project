@@ -138,11 +138,12 @@ SELECT * FROM Addresses;
 | 3 | 3 | Connaught Place     | Delhi   |
 
 
-Question 5
+## Question 5
+**Create an Orders table and insert order details placed by users.**
 
-Create an Orders table and insert order details placed by users.
+### SQL Query
 
-SQL Query
+```sql
 CREATE TABLE Orders (
     order_id INT PRIMARY KEY,
     user_id INT,
@@ -155,13 +156,20 @@ CREATE TABLE Orders (
 INSERT INTO Orders VALUES
 (5001, 1, '2024-05-10', 1),
 (5002, 2, '2024-05-11', 2);
-Verification Query
-SELECT * FROM Orders;
-Output
-order_id	user_id	order_date	address_id
-5001	1	2024-05-10	1
-5002	2	2024-05-11	2
+```
 
+### Verification Query
+
+```sql
+SELECT * FROM Orders;
+```
+
+### Output
+
+| order_id | user_id | order_date | address_id |
+|----------|---------|------------|------------|
+| 5001 | 1 | 2024-05-10 | 1 |
+| 5002 | 2 | 2024-05-11 | 2 |
 
 ## Question 6
 **Create an OrderItems table and insert details of products included in each order.**
