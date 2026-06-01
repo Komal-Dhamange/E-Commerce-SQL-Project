@@ -1,7 +1,5 @@
 # E-Commerce-SQL-Project
 
-# E-Commerce SQL Project
-
 ## Question 1
 **Create a Users table and insert user details into the table.**
 
