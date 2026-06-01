@@ -1,5 +1,21 @@
 # E-Commerce-SQL-Project
 
+## Project Overview
+This project demonstrates the implementation of an E-Commerce Database using SQL. It includes tables such as Users, Categories, Products, Addresses, Orders, OrderItems, and Payments. Various SQL queries are used to manage and retrieve data efficiently.
+
+## Database Schema
+- Users
+- Categories
+- Products
+- Addresses
+- Orders
+- OrderItems
+- Payments
+
+---
+
+# Database Creation and Data Insertion
+
 ## Question 1
 **Create a Users table and insert user details into the table.**
 
@@ -451,3 +467,17 @@ WHERE price > 50000;
 | 101 | iPhone 14     | 70000 |
 | 102 | Samsung S23   | 65000 |
 | 103 | Dell Inspiron | 55000 |
+
+
+## Conclusion
+
+This project successfully demonstrates the design and implementation of an E-Commerce Database using SQL. The database manages users, products, categories, orders, addresses, and payments efficiently. Various SQL queries such as SELECT, JOIN, COUNT, SUM, and filtering operations were performed to retrieve meaningful information from the database.
+
+## Technologies Used
+
+- SQL
+- MySQL
+
+## Author
+
+Komal Dhamange
