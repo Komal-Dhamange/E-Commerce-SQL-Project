@@ -66,3 +66,40 @@ SELECT * FROM Categories;
 | 1 | Mobiles |
 | 2 | Laptops |
 | 3 | Fashion |
+
+
+## Question 3
+**Create a Products table and insert product details along with their category information.**
+
+### SQL Query
+
+```sql
+CREATE TABLE Products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100),
+    price INT,
+    category_id INT,
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+);
+
+INSERT INTO Products VALUES
+(101, 'iPhone 14', 70000, 1),
+(102, 'Samsung S23', 65000, 1),
+(103, 'Dell Inspiron', 55000, 2),
+(104, 'Men T-Shirt', 1200, 3);
+```
+
+### Verification Query
+
+```sql
+SELECT * FROM Products;
+```
+
+### Output
+
+| product_id | product_name   | price | category_id |
+|------------|---------------|-------|-------------|
+| 101 | iPhone 14     | 70000 | 1 |
+| 102 | Samsung S23   | 65000 | 1 |
+| 103 | Dell Inspiron | 55000 | 2 |
+| 104 | Men T-Shirt   | 1200  | 3 |
